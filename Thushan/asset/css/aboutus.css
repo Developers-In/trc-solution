@@ -4,15 +4,39 @@
     border-radius: 0 !important;
 }
 
+/*.................contact us section background image...............*/
+
+.cover-image {
+    background: url(../img/cont.jpg)  no-repeat center center fixed;
+    background-size: cover !important;
+}
+
 .jumbotron {
-    background-image: linear-gradient(330deg, #a7a6a7 0%, #d6d6d6 100%);
+    background-image: linear-gradient(330deg, #8f8a8f 0%, #cfc9c9 100%);
     border-radius: 3px;
+}
+
+/*...............contact us form section left side...............*/
+
+.cont-left-side{
+    background-color: white;
+}
+
+/*........form label style.............*/
+
+.form-group label {
+    color: #450245;
+    font-size: 20px;
+}
+
+.form-group label span {
+    color: red;
 }
 
 /*.......btn section.........*/
 
 .submit-btn {
-    border: 1px solid purple;
+    border: 2px solid purple;
     color: purple;
 }
 
@@ -21,8 +45,3 @@
     background-color: purple;
 }
 
-/*...........image section...........*/
-
-.contactus-img {
-    height: 120vh;
-}
