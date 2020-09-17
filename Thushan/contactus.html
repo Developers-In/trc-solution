@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="asset/css/aboutus.css">
+    <script src="asset/js/contactus.js"></script>
+
+</head>
+<body>
+
+<!--container fluid start-->
+<div class="container-fluid">
+
+<div class="row">
+<!--    title and contact us form start-->
+    <div class="col-7 p-5">
+
+<!--        title section start-->
+        <div class="container mb-4">
+            <h1>Contact Us</h1>
+        </div>
+<!--        title section end-->
+
+<!--        form section start-->
+        <div class="container">
+            <div class="jumbotron jumbotron-fluid m-0 p-5">
+                <div class="container">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="txtname">Name</label>
+                            <input type="text" name="" id="txtname" class="form-control" placeholder="" onkeyup="inputFieldValidation(txtName,'^[A-Z][a-zA-Z]{3,}(?: [A-Z][a-zA-Z]*){0,9}$')" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtemail">E-Mail</label>
+                            <input type="text" name="" id="txtemail" class="form-control" placeholder="" onkeyup="inputFieldValidation(txtEmail,'^[a-zA-Z0-9_!#$%&\'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$')" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtcontactnumber">Contact Number</label>
+                            <input type="email" name="" id="txtcontactnumber" class="form-control" placeholder="" onkeyup="inputFieldValidation(txtcontactnumber,'^(((0\\\\d{9})){0,1})$')" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtcompany">Company</label>
+                            <input type="text" name="" id="txtcompany" class="form-control" placeholder="" onkeyup="inputFieldValidation(txtcompany,'^.*$')" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtdescription">What Do You Want To Build</label>
+                            <textarea type="text" name="" id="txtdescription" class="form-control" placeholder="" onkeyup="inputFieldValidation(txtdescription,'^.*$')"></textarea>
+                        </div>
+<!--                        btn section start-->
+                        <div class="form-group">
+                            <button type="submit" class="btn submit-btn">Send</button>
+                        </div>
+<!--                        btn section end-->
+                    </form>
+
+                </div>
+            </div>
+        </div>
+<!--        form section end-->
+
+    </div>
+<!--title and contact us form end-->
+
+<!--    image section start-->
+    <div class="d-sm-none d-md-block col-md-5">
+        <img class="img contactus-img" src="asset/img/1.jpg" alt="" >
+    </div>
+<!--    image section end-->
+
+</div>
+</div>
+<!--    container fluid end-->
+
+</body>
+</html>

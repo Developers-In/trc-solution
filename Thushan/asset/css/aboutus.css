@@ -1,0 +1,28 @@
+
+* {
+    /*border: 1px solid red;*/
+    border-radius: 0 !important;
+}
+
+.jumbotron {
+    background-image: linear-gradient(330deg, #a7a6a7 0%, #d6d6d6 100%);
+    border-radius: 3px;
+}
+
+/*.......btn section.........*/
+
+.submit-btn {
+    border: 1px solid purple;
+    color: purple;
+}
+
+.submit-btn:hover {
+    color: white;
+    background-color: purple;
+}
+
+/*...........image section...........*/
+
+.contactus-img {
+    height: 120vh;
+}
