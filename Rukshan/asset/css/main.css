@@ -1,0 +1,50 @@
+:root {
+    --primaryColor: #931499;
+    --secondaryColor: #f1f1f1;
+}
+
+/* Styles For All */
+* {
+    border-radius: 0 !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+}
+
+/* Navbar Styles Start */
+.active {
+    font-weight: bold;
+}
+.search-field:focus {
+    box-shadow: none;
+    border-color: var(--primaryColor);
+}
+.nav-link:hover {
+    color: var(--primaryColor) !important;
+    font-weight: bold;
+}
+@media only screen and (max-width: 576px) {
+    .sw-100 {
+        width: 100%;
+    }
+}
+.btn-primary {
+    color: #fff;
+    background-color: var(--primaryColor);
+    border: var(--primaryColor);
+}
+.btn-primary:hover {
+    background-color: #6a136e;
+}
+/* Navbar Styles End */
+
+/* Contents Style Start */
+.content-div {
+    height: 50vh;
+}
+/* Contents Style End */
