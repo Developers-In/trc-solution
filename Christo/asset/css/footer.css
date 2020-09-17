@@ -1,0 +1,23 @@
+/** {
+    border: 1px solid red;
+}*/
+
+.bg-colour {
+    background-color: lightgray;
+}
+
+.social-icon {
+    width: 2rem;
+    height: auto;
+    margin: 0.5rem;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #931499;
+    border: #931499;
+}
+
+.btn-primary:hover {
+    background-color: #6a136e;
+}
