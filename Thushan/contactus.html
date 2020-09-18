@@ -18,9 +18,9 @@
 <!--container fluid start-->
 <div class="container-fluid">
 
-<div class="row">
+<div class="row  cover-image">
 <!--    title and contact us form start-->
-    <div class="col-7 p-5">
+    <div class="col-8 p-5 cont-left-side">
 
 <!--        title section start-->
         <div class="container mb-4">
@@ -34,30 +34,40 @@
                 <div class="container">
                     <form action="">
                         <div class="form-group">
-                            <label for="txtname">Name</label>
-                            <input type="text" name="" id="txtname" class="form-control" placeholder="" onkeyup="inputFieldValidation(txtName,'^[A-Z][a-zA-Z]{3,}(?: [A-Z][a-zA-Z]*){0,9}$')" required>
+                            <label for="txtname">Name
+                            <span>*</span>
+                            </label>
+                            <input type="text" name="" id="txtname" class="form-control" placeholder="" onkeyup="inputFieldValidation(txtname,'^[A-Z][a-zA-Z]{3,}(?: [A-Z][a-zA-Z]*){0,9}$')" required>
                         </div>
                         <div class="form-group">
-                            <label for="txtemail">E-Mail</label>
-                            <input type="text" name="" id="txtemail" class="form-control" placeholder="" onkeyup="inputFieldValidation(txtEmail,'^[a-zA-Z0-9_!#$%&\'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$')" required>
+                            <label for="txtemail">E-Mail
+                                <span>*</span>
+                            </label>
+                            <input type="text" name="" id="txtemail" class="form-control" placeholder="" onkeyup="inputFieldValidation(txtemail,'^[a-zA-Z0-9_!#$%&\'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$')" required>
                         </div>
                         <div class="form-group">
-                            <label for="txtcontactnumber">Contact Number</label>
+                            <label for="txtcontactnumber">Contact Number
+                                <span>*</span>
+                            </label>
                             <input type="email" name="" id="txtcontactnumber" class="form-control" placeholder="" onkeyup="inputFieldValidation(txtcontactnumber,'^(((0\\\\d{9})){0,1})$')" required>
                         </div>
                         <div class="form-group">
-                            <label for="txtcompany">Company</label>
+                            <label for="txtcompany">Company
+                                <span>*</span>
+                            </label>
                             <input type="text" name="" id="txtcompany" class="form-control" placeholder="" onkeyup="inputFieldValidation(txtcompany,'^.*$')" required>
                         </div>
                         <div class="form-group">
                             <label for="txtdescription">What Do You Want To Build</label>
                             <textarea type="text" name="" id="txtdescription" class="form-control" placeholder="" onkeyup="inputFieldValidation(txtdescription,'^.*$')"></textarea>
                         </div>
+
 <!--                        btn section start-->
                         <div class="form-group">
                             <button type="submit" class="btn submit-btn">Send</button>
                         </div>
 <!--                        btn section end-->
+
                     </form>
 
                 </div>
@@ -69,8 +79,7 @@
 <!--title and contact us form end-->
 
 <!--    image section start-->
-    <div class="d-sm-none d-md-block col-md-5">
-        <img class="img contactus-img" src="asset/img/1.jpg" alt="" >
+    <div class="d-sm-none d-md-block col-4">
     </div>
 <!--    image section end-->
 
