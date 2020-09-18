@@ -1,23 +1,71 @@
-/** {
-    border: 1px solid red;
-}*/
+/* Footer Styles Start */
 
-.bg-colour {
-    background-color: lightgray;
+/* Footer first row styles start */
+
+.vh-35{
+    height: 35vh;
+}
+.bg-gray {
+    background-color: grey;
 }
 
+/* Footer first row styles end */
+
+/* Footer second row styles start */
+
+.bg-lightgray {
+    background-color: lightgray;
+}
+ul li a {
+    color: #606060;
+}
+ul li a:hover {
+    color: #a84bc8;
+    text-decoration: none;
+}
+
+/* Footer second row styles end */
+
+/* Footer third row styles start */
+
+.vh-20{
+    height: 20vh;
+}
+.form-control {
+    border-radius: 0;
+}.form-control:focus{
+     border-color: transparent;
+     box-shadow: none;
+ }
+.btn-primary {
+    color: #fff;
+    background-color: #931499;
+    border: #931499;
+    border-radius: 0;
+}
+.btn-primary:focus {
+    box-shadow: none;
+}
+.btn-primary:hover {
+    background-color: #6a136e;
+}
 .social-icon {
     width: 2rem;
     height: auto;
     margin: 0.5rem;
 }
 
-.btn-primary {
-    color: #fff;
-    background-color: #931499;
-    border: #931499;
-}
+/* Footer third row styles end */
 
-.btn-primary:hover {
+/* Footer forth row styles start */
+
+.vh-8{
+    height: 8vh;
+}
+.bg-purple {
     background-color: #6a136e;
 }
+
+/* Footer forth row styles start */
+
+/* Footer Styles End */
