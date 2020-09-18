@@ -1,0 +1,15 @@
+
+
+/*...........tech icon style........*/
+.icon-size{
+    height: 6rem;
+    padding: 10px;
+}
+
+.icon-style{
+    filter: grayscale(100%);
+}
+
+.icon-style:hover{
+    filter: grayscale(0%);
+}
