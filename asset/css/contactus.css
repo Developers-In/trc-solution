@@ -1,0 +1,32 @@
+
+* {
+    /*border: 1px solid red;*/
+    border-radius: 0 !important;
+}
+
+/*.................contact us section background image...............*/
+
+.cover-image {
+    background: url(../img/cont.jpg)  no-repeat center;
+    background-size: cover !important;
+}
+
+/*........form label style.............*/
+
+.form-group label {
+    color: #450245;
+    font-size: 20px;
+}
+
+/*.......btn section.........*/
+
+.submit-btn {
+    border: 2px solid purple;
+    color: purple;
+}
+
+.submit-btn:hover {
+    color: white;
+    background-color: purple;
+}
+

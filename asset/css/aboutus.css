@@ -1,0 +1,20 @@
+
+.cover-size{
+    background-size: cover !important;
+}
+
+.aboutus-section-first {
+    background: url(../img/team.jpg)  no-repeat center;
+}
+
+.aboutus-section-second {
+    background: url(../img/wework.jpg)  no-repeat center;
+}
+
+.aboutus-section-thired{
+    background: url(../img/community.jpg)  no-repeat center;
+}
+
+.aboutus-title{
+    color: #830588;
+}
