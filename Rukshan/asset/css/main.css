@@ -48,13 +48,13 @@ body {
     }
 }
 
-.btn-primary {
+.btn-purple {
     color: #fff;
     background-color: var(--primaryColor);
     border: var(--primaryColor);
 }
 
-.btn-primary:hover {
+.btn-purple:hover {
     background-color: #6a136e;
 }
 /* Navbar Styles End */
