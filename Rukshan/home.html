@@ -11,6 +11,9 @@
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="asset/css/main.css">
+    <link rel="stylesheet" href="asset/css/aboutus.css">
+    <link rel="stylesheet" href="asset/css/serviceandtechnology.css">
+    <link rel="stylesheet" href="asset/css/contactus.css">
 
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -23,7 +26,7 @@
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
     <!-- Custom JS-->
-    <script src="asset/js/main.js"></script>
+    <script src="asset/js/contactus.js"></script>
 </head>
 
 <body>
@@ -41,16 +44,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active mx-4">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item mx-4">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#about_area">About Us</a>
             </li>
             <li class="nav-item mx-4">
-                <a class="nav-link" href="#">Services & Technologies</a>
+                <a class="nav-link" href="#contentService">Services & Technologies</a>
             </li>
             <li class="nav-item mx-4">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="#contentContactUs">Contact Us</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0" onsubmit="return false">
@@ -60,6 +63,8 @@
     </div>
 </nav>
 <!-- Navbar End -->
+
+<span id="home"></span>
 
 <!-- Carousel Start -->
 <div class="container-fluid p-0">
@@ -109,43 +114,444 @@
 </div>
 <!-- Carousel End -->
 
+<span id="about_area"></span>
+
 <!-- About Us Content Start -->
-<div class="container-fluid mt-2 content-div" id="contentAbout">
-    <h1>About Us</h1>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
-        the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
-        the navigation bar while scrolling!</p>
+<div class="container-fluid mt-5" id="contentAbout">
+    <div class="row pb-4">
+        <div class="col">
+            <h1 class="text-center display-4 font-weight-bold">About us</h1>
+        </div>
+    </div>
+    <div class="row aboutus-section-first cover-size">
+        <div class="col-sm-0 col-md-6"></div>
+
+        <!----- about us description section start -------->
+        <div class="col-sm-12 col-md-6 bg-white justify-content-center pt-md-5 pb-md-5">
+            <div class="jumbotron jumbotron-fluid m-0 p-0 bg-light">
+                <div class="container mb-4 aboutus-title">
+                    <h1>Meet The Monterail Team</h1>
+                </div>
+                <div class="container">
+                    <p class="text-justify">When we started in 2010, we were just a tight group dedicated to the craft
+                        of product building.
+                        Our attitude hasn't changed—but since then, we’ve grown to be a team of 110+ team members with
+                        every skill web software needs to be successful. From the first concept to the grand
+                        release.</p>
+                </div>
+            </div>
+        </div>
+        <!--        about us description section end--------->
+
+    </div>
+
+    <div class="row aboutus-section-second cover-size">
+
+        <!-----        about us description section start-------->
+        <div class="col-sm-12 col-md-6 bg-white justify-content-center pt-md-5 pb-md-5">
+            <div class="jumbotron jumbotron-fluid m-0 p-0 bg-light">
+                <div class="container mb-4 aboutus-title">
+                    <h1>How we work</h1>
+                </div>
+                <div class="container">
+                    <p class="text-justify">Our working, living and even resting culture is constantly improved with
+                        simpler solutions,
+                        and apps play a great role in that process. We at Monterail are often amazed with some of
+                        the brilliant ideas our potential clients bring to the table, thinking–how does one come up
+                        with something like that? We like that the part before we get the spec is a wonderful mystery
+                        of each individual project, but what happens after–is our field of expertise</p>
+                </div>
+            </div>
+        </div>
+        <!-- about us description section end --------->
+
+        <div class="col-sm-0 col-md-6">
+        </div>
+    </div>
+
+    <div class="row aboutus-section-thired cover-size">
+        <div class="col-sm-0 col-md-6"></div>
+
+        <!----- about us description section start -------->
+        <div class="col-sm-12 col-md-6 bg-white justify-content-center pt-md-5 pb-md-5">
+            <div class="jumbotron jumbotron-fluid m-0 p-0 bg-light">
+                <div class="container mb-4 aboutus-title">
+                    <h1>Community, with love</h1>
+                </div>
+                <div class="container">
+                    <p class="text-justify">There’s nothing more exciting than going out there and saying why what you
+                        do matters.
+                        That’s what motivates us when we organize, support and attend to local events in Wrocław.
+                        We love to listen to what others do; we love to share what we’ve done.
+                        So… when and where would you like to talk?</p>
+                </div>
+            </div>
+        </div>
+        <!-- about us description section end --------->
+    </div>
 </div>
 <!-- About Us Content End -->
 
 <!-- Services & Technologies Content Start -->
-<div class="container-fluid content-div" id="contentService">
-    <h1>Service & Technologies</h1>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
-        the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
-        the navigation bar while scrolling!</p>
+<div class="container-fluid" id="contentService">
+    <!-- Page Heading Div Start -->
+    <div class="row pt-4 pb-4">
+        <div class="col">
+            <h1 class="text-center display-4 font-weight-bold">Services & Technologies</h1>
+        </div>
+    </div>
+    <!-- Page Heading Div End -->
+    <div class="row pt-3 pr-3 pl-3">
+        <!-- Services Content Start-->
+        <div class="col-sm-12 col-md-6 p-0 service-content">
+            <div class="card-deck mb-4">
+                <!-- First card Start-->
+                <div class="card text-white bg-purple text-center">
+                    <div class="card-body">
+                        <img src="asset/img/service/web.png" alt="webdesign">
+                        <h5 class="card-title">Web Design & Development</h5>
+                        <p class="card-text small">Looking to build a new website, or redesign
+                            an existing one? Our
+                            team
+                            of internet technology experts delivers innovative and robust web
+                            portals capable of
+                            handling the most demanding performance needs.</p>
+                    </div>
+                </div>
+                <!-- First card End-->
+
+                <!-- Second card Start-->
+                <div class="card text-white bg-purple text-center">
+                    <div class="card-body">
+                        <img src="asset/img/service/mobile.png" alt="mobileapp">
+                        <h5 class="card-title">Mobile Apps Development</h5>
+                        <p class="card-text small">Looking to make your web site content available through mobile
+                            platforms? TRC builds applications and web sites that are fully capable of being
+                            deployed to mobile phones and Internet connected devices.</p>
+                    </div>
+                </div>
+                <!-- Second card End-->
+            </div>
+
+            <div class="card-deck">
+                <!-- Third card Start-->
+                <div class="card text-white bg-purple text-center">
+                    <div class="card-body">
+                        <img src="asset/img/service/training.png" alt="training">
+                        <h5 class="card-title">Training</h5>
+                        <p class="card-text small">Need help understanding how to get the most out of your technology
+                            solutions? TRC offers training appropriate for business decision makers, IT managers,
+                            developers and end users.</p>
+                    </div>
+                </div>
+                <!-- Third card End-->
+
+                <!-- Fourth card Start-->
+                <div class="card text-white bg-purple text-center">
+                    <div class="card-body">
+                        <img src="asset/img/service/support.png" alt="training">
+                        <h5 class="card-title">Support</h5>
+                        <p class="card-text small">TRC' team of
+                            internet strategists, technical leads and project managers stay involved with your web site
+                            as it grows, on call to handle new development tasks, interruptions in service or any other
+                            issues that might arise long after your site has been launched.</p>
+                    </div>
+                </div>
+                <!-- Fourth card End-->
+            </div>
+        </div>
+
+        <!--------- Technology Icon Section Start------->
+        <div class="col-sm-12 col-md-6 p-0">
+            <div class="row">
+                <div class="col-4 d-flex justify-content-center align-items-center">
+                    <img src="asset/img/technology/laravel.png" alt="" class="img-fluid icon-size icon-style">
+                </div>
+                <div class="col-4 d-flex justify-content-center align-items-center">
+                    <img src="asset/img/technology/codeigniter.png" alt="" class="img-fluid icon-size icon-style">
+                </div>
+                <div class="col-4 d-flex justify-content-center align-items-center">
+                    <img src="asset/img/technology/nodejs.png" alt="" class="img-fluid icon-size icon-style">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 d-flex justify-content-center align-items-center">
+                    <img src="asset/img/technology/html.png" alt="" class="img-fluid icon-size icon-style">
+                </div>
+                <div class="col-4 d-flex justify-content-center align-items-center">
+                    <img src="asset/img/technology/css.png" alt="" class="img-fluid icon-size icon-style">
+                </div>
+                <div class="col-4 d-flex justify-content-center align-items-center">
+                    <img src="asset/img/technology/js.png" alt="" class="img-fluid icon-size icon-style">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 d-flex justify-content-center align-items-center">
+                    <img src="asset/img/technology/jquery.png" alt="" class="img-fluid icon-size icon-style">
+                </div>
+                <div class="col-4 d-flex justify-content-center align-items-center">
+                    <img src="asset/img/technology/bootstrap.png" alt="" class="img-fluid icon-size icon-style">
+                </div>
+                <div class="col-4 d-flex justify-content-center align-items-center">
+                    <img src="asset/img/technology/tailwindcss.png" alt="" class="img-fluid icon-size icon-style">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 d-flex justify-content-center align-items-center">
+                    <img src="asset/img/technology/angular.png" alt="" class="img-fluid icon-size icon-style">
+                </div>
+                <div class="col-4 d-flex justify-content-center align-items-center">
+                    <img src="asset/img/technology/vuejs.png" alt="" class="img-fluid icon-size icon-style">
+                </div>
+                <div class="col-4 d-flex justify-content-center align-items-center">
+                    <img src="asset/img/technology/react.png" alt="" class="img-fluid icon-size icon-style">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------- Technology Icon Section End ---------->
 </div>
 <!-- Services & Technologies Content End -->
 
 <!-- Contact Us Content Start -->
-<div class="container-fluid content-div" id="contentContactUs">
-    <h1>Contact Us</h1>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
-        the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
-        the navigation bar while scrolling!</p>
+<div class="container-fluid" id="contentContactUs">
+    <div class="row  cover-image">
+        <!--    title and contact us form start-->
+        <div class="col-sm-12 col-md-6 p-sm-2 p-md-5 bg-white">
+
+            <!-- title section start-->
+            <div class="container mb-4">
+                <h1>Contact Us</h1>
+            </div>
+            <!-- title section end-->
+
+            <!-- form section start-->
+            <div class="container">
+                <div class="jumbotron jumbotron-fluid m-md-0 mb-sm-3 p-5">
+                    <div class="container">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="txtname">Name
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <input type="text" name="" id="txtname" class="form-control" placeholder=""
+                                       onkeyup="inputFieldValidation(txtname,'^[A-Z][a-zA-Z]{3,}(?: [A-Z][a-zA-Z]*){0,9}$')">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtemail">E-Mail
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <input type="text" name="" id="txtemail" class="form-control" placeholder=""
+                                       onkeyup="inputFieldValidation(txtemail,'^[a-zA-Z0-9_!#$%&\'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$')">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtcontactnumber">Contact Number
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <input type="email" name="" id="txtcontactnumber" class="form-control" placeholder=""
+                                       onkeyup="inputFieldValidation(txtcontactnumber,'^(((0\\\\d{9})){0,1})$')">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtcompany">Company
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <input type="text" name="" id="txtcompany" class="form-control" placeholder=""
+                                       onkeyup="inputFieldValidation(txtcompany,'^.*$')">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtdescription">What Do You Want To Build</label>
+                                <textarea type="text" name="" id="txtdescription" class="form-control" placeholder=""
+                                          onkeyup="inputFieldValidation(txtdescription,'^.*$')"></textarea>
+                            </div>
+
+                            <!-- btn section start-->
+                            <div class="form-group">
+                                <button type="submit" class="btn submit-btn">Send</button>
+                            </div>
+                            <!-- btn section end-->
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <!--        form section end-->
+
+        </div>
+        <!--title and contact us form end-->
+
+        <!--    image section start-->
+        <div class="col-sm-0 d-sm-none col-md-6"></div>
+        <!--    image section end-->
+
+    </div>
 </div>
 <!-- Contact Us Content End -->
 
 <!-- Footer Area Start -->
-<div class="container-fluid p-0 content-div">
-    <h1>Footer</h1>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
-        the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
-        the navigation bar while scrolling!</p>
+<div class="container-fluid p-0">
+    <!-- footer first row start -->
+    <div class="row pt-4 pb-2 bg-gray vh-35 d-flex align-items-center m-0">
+        <div class="col-sm-6 col-md-3 text-center">
+            <img src="asset/img/footer/completed.png" alt="" class="img-fluid pb-2">
+            <h3 class="text-light">60+</h3>
+            <h5 class="mb-3 text-light">Projects Completed</h5>
+        </div>
+        <div class="col-sm-6 col-md-3 text-center">
+            <img src="asset/img/footer/ongoing.png" alt="" class="img-fluid pb-2">
+            <h3 class="text-light">8</h3>
+            <h5 class="mb-3 text-light">Projects Ongoing</h5>
+        </div>
+        <div class="col-sm-6 col-md-3 text-center">
+            <img src="asset/img/footer/client.png" alt="" class="img-fluid pb-2">
+            <h3 class="text-light">50+</h3>
+            <h5 class="mb-3 text-light">Satisfied Clients</h5>
+        </div>
+        <div class="col-sm-6 col-md-3 text-center">
+            <img src="asset/img/footer/employee.png" alt="" class="img-fluid pb-2">
+            <h3 class="text-light">10+</h3>
+            <h5 class="mb-3 text-light">Working Employees</h5>
+        </div>
+    </div>
+    <!-- footer first row end -->
+
+    <!-- footer second row start -->
+    <div class="row vh-35 m-0">
+        <div class="col-sm-12 col-md-5 d-flex justify-content-center align-items-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="asset/img/company-logo.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-7 p-3">
+            <div class="row">
+                <div class="col-sm-12 col-md-3 text-center">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#">Web Design & Development</a>
+                        </li>
+                        <li>
+                            <a href="#">Mobile Apps Development</a>
+                        </li>
+                        <li>
+                            <a href="#">Training</a>
+                        </li>
+                        <li>
+                            <a href="#">Support</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-3 text-center">
+                    <h5>Technologies</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="">Laravel</a>
+                        </li>
+                        <li>
+                            <a href="">NodeJs</a>
+                        </li>
+                        <li>
+                            <a href="">HTML</a>
+                        </li>
+                        <li>
+                            <a href="">CSS</a>
+                        </li>
+                        <li>
+                            <a href="">Bootstrap</a>
+                        </li>
+                        <li>
+                            <a href="">JS</a>
+                        </li>
+                        <li>
+                            <a href="">jQuery</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-3 text-center">
+                    <h5>Tools</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="">PhpStorm</a>
+                        </li>
+                        <li>
+                            <a href="">Android Studio</a>
+                        </li>
+                        <li>
+                            <a href="">MySql</a>
+                        </li>
+                        <li>
+                            <a href="">GitHub</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-3 text-center">
+                    <h5>About</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="">Meet The Monterail Team</a>
+                        </li>
+                        <li>
+                            <a href="">How we work</a>
+                        </li>
+                        <li>
+                            <a href="">Community, with love</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer second row end -->
+
+    <!-- footer third row start -->
+    <div class="row bg-lightgray vh-20 d-flex align-items-center m-0">
+        <div class="col-sm-12 col-md-5">
+            <div class="mt-3 d-flex">
+                <input type="text" class="form-control" placeholder="Enter Email">
+                <button class="btn btn-purple ml-3" type="button">Subscribe</button>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-7">
+            <ul class="list-unstyled d-flex flex-row justify-content-end align-items-center mt-2" id="social_icons">
+                <li>
+                    <a href="#">
+                        <img src="asset/img/footer/facebook.png" alt="" class="img-fluid social-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="asset/img/footer/whatsapp.png" alt="" class="img-fluid social-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="asset/img/footer/linkedin.png" alt="" class="img-fluid social-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="asset/img/footer/twitter.png" alt="" class="img-fluid social-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="asset/img/footer/reddit.png" alt="" class="img-fluid social-icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- footer third row end -->
+
+    <!-- footer forth row start -->
+    <div class="row bg-purple vh-8 m-0">
+        <div class="col d-flex justify-content-center align-items-center">
+            <p class="text-white mb-0">&copy;TRC Solutions 2020</p>
+        </div>
+    </div>
+    <!-- footer forth row end -->
 </div>
 <!-- Footer Area End -->
 </body>

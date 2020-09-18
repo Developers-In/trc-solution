@@ -3,3 +3,21 @@
     background-color: #450245;
 }
 /* Card Styles End */
+
+/*...........tech icon style........*/
+.icon-size{
+    height: 7.5rem;
+    padding: 0.625rem;
+}
+.icon-style{
+    filter: grayscale(100%);
+}
+.icon-style:hover{
+    filter: grayscale(0%);
+}
+
+@media only screen and (max-width: 576px) {
+    .icon-style{
+        filter: grayscale(0%);
+    }
+}
