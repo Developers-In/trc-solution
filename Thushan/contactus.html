@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="asset/css/aboutus.css">
+    <link rel="stylesheet" href="asset/css/contactus.css">
     <script src="asset/js/contactus.js"></script>
 
 </head>
@@ -20,7 +20,7 @@
 
 <div class="row  cover-image">
 <!--    title and contact us form start-->
-    <div class="col-8 p-5 cont-left-side">
+    <div class="col-8 p-5 bg-white">
 
 <!--        title section start-->
         <div class="container mb-4">
@@ -35,25 +35,25 @@
                     <form action="">
                         <div class="form-group">
                             <label for="txtname">Name
-                            <span>*</span>
+                            <span class="text-danger">*</span>
                             </label>
                             <input type="text" name="" id="txtname" class="form-control" placeholder="" onkeyup="inputFieldValidation(txtname,'^[A-Z][a-zA-Z]{3,}(?: [A-Z][a-zA-Z]*){0,9}$')" required>
                         </div>
                         <div class="form-group">
                             <label for="txtemail">E-Mail
-                                <span>*</span>
+                                <span class="text-danger">*</span>
                             </label>
                             <input type="text" name="" id="txtemail" class="form-control" placeholder="" onkeyup="inputFieldValidation(txtemail,'^[a-zA-Z0-9_!#$%&\'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$')" required>
                         </div>
                         <div class="form-group">
                             <label for="txtcontactnumber">Contact Number
-                                <span>*</span>
+                                <span class="text-danger">*</span>
                             </label>
                             <input type="email" name="" id="txtcontactnumber" class="form-control" placeholder="" onkeyup="inputFieldValidation(txtcontactnumber,'^(((0\\\\d{9})){0,1})$')" required>
                         </div>
                         <div class="form-group">
                             <label for="txtcompany">Company
-                                <span>*</span>
+                                <span class="text-danger">*</span>
                             </label>
                             <input type="text" name="" id="txtcompany" class="form-control" placeholder="" onkeyup="inputFieldValidation(txtcompany,'^.*$')" required>
                         </div>

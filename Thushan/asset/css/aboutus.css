@@ -1,47 +1,20 @@
 
-* {
-    /*border: 1px solid red;*/
-    border-radius: 0 !important;
-}
-
-/*.................contact us section background image...............*/
-
-.cover-image {
-    background: url(../img/cont.jpg)  no-repeat center center fixed;
+.cover-size{
     background-size: cover !important;
 }
 
-.jumbotron {
-    background-image: linear-gradient(330deg, #8f8a8f 0%, #cfc9c9 100%);
-    border-radius: 3px;
+.aboutus-section-first {
+    background: url(../img/team.jpg)  no-repeat center;
 }
 
-/*...............contact us form section left side...............*/
-
-.cont-left-side{
-    background-color: white;
+.aboutus-section-second {
+    background: url(../img/wework.jpg)  no-repeat center;
 }
 
-/*........form label style.............*/
-
-.form-group label {
-    color: #450245;
-    font-size: 20px;
+.aboutus-section-thired{
+    background: url(../img/community.jpg)  no-repeat center;
 }
 
-.form-group label span {
-    color: red;
+.aboutus-title{
+    color: #830588;
 }
-
-/*.......btn section.........*/
-
-.submit-btn {
-    border: 2px solid purple;
-    color: purple;
-}
-
-.submit-btn:hover {
-    color: white;
-    background-color: purple;
-}
-
