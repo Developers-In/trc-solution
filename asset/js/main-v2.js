@@ -1,10 +1,21 @@
 window.addEventListener("load", loadSite);
 
-// ............Site Loading Function
-
+// .............Site Loading Function
 function loadSite () {
-    let loadingSite = document.getElementsByTagName("body");
-    loadingSite[0].innerHTML = "<!-- Navbar Start -->\n" +
+    loadNavBar();
+    loadCarousel();
+    loadAboutUs();
+    loadServiceAndTech();
+    loadContactUs();
+    loadFooter();
+}
+
+
+// .............Site NavBar Section Loading Function
+
+function loadNavBar () {
+    let navbar = document.getElementById("navBar");
+    navbar.innerHTML = "<!-- Navbar Start -->\n" +
         "<nav class=\"navbar navbar-expand-lg navbar-light bg-light fixed-top\">\n" +
         "    <a class=\"navbar-brand\" href=\"#\">\n" +
         "        <img src=\"asset/img/company-logo.png\" width=\"170\" class=\"d-inline-block align-top\"\n" +
@@ -38,9 +49,16 @@ function loadSite () {
         "</nav>\n" +
         "<!-- Navbar End -->\n" +
         "\n" +
-        "<span id=\"home\"></span>\n" +
-        "\n" +
-        "<!-- Carousel Start -->\n" +
+        "<span id=\"home\"></span>"
+}
+
+// .............Nav Bar Section End
+
+// .............Site Carousel Section Loading Function
+
+function loadCarousel () {
+    let carousel = document.getElementById("carousel");
+    carousel.innerHTML = "<!-- Carousel Start -->\n" +
         "<div class=\"container-fluid p-0\">\n" +
         "    <div class=\"row m-0\">\n" +
         "        <div class=\"col p-0\">\n" +
@@ -88,85 +106,99 @@ function loadSite () {
         "</div>\n" +
         "<!-- Carousel End -->\n" +
         "\n" +
-        "<span id=\"about_area\"></span>\n" +
-        "\n" +
-        "<!-- About Us Content Start -->\n" +
-        "<div class=\"container-fluid mt-5\" id=\"contentAbout\">\n" +
-        "    <div class=\"row pb-4\">\n" +
-        "        <div class=\"col\">\n" +
-        "            <h1 class=\"text-center display-4 font-weight-bold\">About us</h1>\n" +
-        "        </div>\n" +
-        "    </div>\n" +
-        "    <div class=\"row aboutus-section-first cover-size\">\n" +
-        "        <div class=\"col-sm-0 col-md-6\"></div>\n" +
-        "\n" +
-        "        <!----- about us description section start -------->\n" +
-        "        <div class=\"col-sm-12 col-md-6 bg-white justify-content-center pt-md-5 pb-md-5\">\n" +
-        "            <div class=\"jumbotron jumbotron-fluid m-0 p-0 bg-light\">\n" +
-        "                <div class=\"container mb-4 aboutus-title\">\n" +
-        "                    <h1>Meet The Monterail Team</h1>\n" +
-        "                </div>\n" +
-        "                <div class=\"container\">\n" +
-        "                    <p class=\"text-justify\">When we started in 2010, we were just a tight group dedicated to the craft\n" +
-        "                        of product building.\n" +
-        "                        Our attitude hasn't changed—but since then, we’ve grown to be a team of 110+ team members with\n" +
-        "                        every skill web software needs to be successful. From the first concept to the grand\n" +
-        "                        release.</p>\n" +
-        "                </div>\n" +
-        "            </div>\n" +
-        "        </div>\n" +
-        "        <!--        about us description section end--------->\n" +
-        "\n" +
-        "    </div>\n" +
-        "\n" +
-        "    <div class=\"row aboutus-section-second cover-size\">\n" +
-        "\n" +
-        "        <!-----        about us description section start-------->\n" +
-        "        <div class=\"col-sm-12 col-md-6 bg-white justify-content-center pt-md-5 pb-md-5\">\n" +
-        "            <div class=\"jumbotron jumbotron-fluid m-0 p-0 bg-light\">\n" +
-        "                <div class=\"container mb-4 aboutus-title\">\n" +
-        "                    <h1>How we work</h1>\n" +
-        "                </div>\n" +
-        "                <div class=\"container\">\n" +
-        "                    <p class=\"text-justify\">Our working, living and even resting culture is constantly improved with\n" +
-        "                        simpler solutions,\n" +
-        "                        and apps play a great role in that process. We at Monterail are often amazed with some of\n" +
-        "                        the brilliant ideas our potential clients bring to the table, thinking–how does one come up\n" +
-        "                        with something like that? We like that the part before we get the spec is a wonderful mystery\n" +
-        "                        of each individual project, but what happens after–is our field of expertise</p>\n" +
-        "                </div>\n" +
-        "            </div>\n" +
-        "        </div>\n" +
-        "        <!-- about us description section end --------->\n" +
-        "\n" +
-        "        <div class=\"col-sm-0 col-md-6\">\n" +
-        "        </div>\n" +
-        "    </div>\n" +
-        "\n" +
-        "    <div class=\"row aboutus-section-thired cover-size\">\n" +
-        "        <div class=\"col-sm-0 col-md-6\"></div>\n" +
-        "\n" +
-        "        <!----- about us description section start -------->\n" +
-        "        <div class=\"col-sm-12 col-md-6 bg-white justify-content-center pt-md-5 pb-md-5\">\n" +
-        "            <div class=\"jumbotron jumbotron-fluid m-0 p-0 bg-light\">\n" +
-        "                <div class=\"container mb-4 aboutus-title\">\n" +
-        "                    <h1>Community, with love</h1>\n" +
-        "                </div>\n" +
-        "                <div class=\"container\">\n" +
-        "                    <p class=\"text-justify\">There’s nothing more exciting than going out there and saying why what you\n" +
-        "                        do matters.\n" +
-        "                        That’s what motivates us when we organize, support and attend to local events in Wrocław.\n" +
-        "                        We love to listen to what others do; we love to share what we’ve done.\n" +
-        "                        So… when and where would you like to talk?</p>\n" +
-        "                </div>\n" +
-        "            </div>\n" +
-        "        </div>\n" +
-        "        <!-- about us description section end --------->\n" +
-        "    </div>\n" +
-        "</div>\n" +
-        "<!-- About Us Content End -->\n" +
-        "\n" +
-        "<!-- Services & Technologies Content Start -->\n" +
+        "<span id=\"about_area\"></span>"
+}
+
+// .............Carousel Section End
+
+// .............Site AboutUs Section Loading Function
+
+function loadAboutUs () {
+    let aboutus = document.getElementById("aboutUs");
+   aboutus.innerHTML= "<!-- About Us Content Start -->\n" +
+       "<div class=\"container-fluid mt-5\" id=\"contentAbout\">\n" +
+       "    <div class=\"row pb-4\">\n" +
+       "        <div class=\"col\">\n" +
+       "            <h1 class=\"text-center display-4 font-weight-bold\">About us</h1>\n" +
+       "        </div>\n" +
+       "    </div>\n" +
+       "    <div class=\"row aboutus-section-first cover-size\">\n" +
+       "        <div class=\"col-sm-0 col-md-6\"></div>\n" +
+       "\n" +
+       "        <!----- about us description section start -------->\n" +
+       "        <div class=\"col-sm-12 col-md-6 bg-white justify-content-center pt-md-5 pb-md-5\">\n" +
+       "            <div class=\"jumbotron jumbotron-fluid m-0 p-0 bg-light\">\n" +
+       "                <div class=\"container mb-4 aboutus-title\">\n" +
+       "                    <h1>Meet The Monterail Team</h1>\n" +
+       "                </div>\n" +
+       "                <div class=\"container\">\n" +
+       "                    <p class=\"text-justify\">When we started in 2010, we were just a tight group dedicated to the craft\n" +
+       "                        of product building.\n" +
+       "                        Our attitude hasn't changed—but since then, we’ve grown to be a team of 110+ team members with\n" +
+       "                        every skill web software needs to be successful. From the first concept to the grand\n" +
+       "                        release.</p>\n" +
+       "                </div>\n" +
+       "            </div>\n" +
+       "        </div>\n" +
+       "        <!--        about us description section end--------->\n" +
+       "\n" +
+       "    </div>\n" +
+       "\n" +
+       "    <div class=\"row aboutus-section-second cover-size\">\n" +
+       "\n" +
+       "        <!-----        about us description section start-------->\n" +
+       "        <div class=\"col-sm-12 col-md-6 bg-white justify-content-center pt-md-5 pb-md-5\">\n" +
+       "            <div class=\"jumbotron jumbotron-fluid m-0 p-0 bg-light\">\n" +
+       "                <div class=\"container mb-4 aboutus-title\">\n" +
+       "                    <h1>How we work</h1>\n" +
+       "                </div>\n" +
+       "                <div class=\"container\">\n" +
+       "                    <p class=\"text-justify\">Our working, living and even resting culture is constantly improved with\n" +
+       "                        simpler solutions,\n" +
+       "                        and apps play a great role in that process. We at Monterail are often amazed with some of\n" +
+       "                        the brilliant ideas our potential clients bring to the table, thinking–how does one come up\n" +
+       "                        with something like that? We like that the part before we get the spec is a wonderful mystery\n" +
+       "                        of each individual project, but what happens after–is our field of expertise</p>\n" +
+       "                </div>\n" +
+       "            </div>\n" +
+       "        </div>\n" +
+       "        <!-- about us description section end --------->\n" +
+       "\n" +
+       "        <div class=\"col-sm-0 col-md-6\">\n" +
+       "        </div>\n" +
+       "    </div>\n" +
+       "\n" +
+       "    <div class=\"row aboutus-section-thired cover-size\">\n" +
+       "        <div class=\"col-sm-0 col-md-6\"></div>\n" +
+       "\n" +
+       "        <!----- about us description section start -------->\n" +
+       "        <div class=\"col-sm-12 col-md-6 bg-white justify-content-center pt-md-5 pb-md-5\">\n" +
+       "            <div class=\"jumbotron jumbotron-fluid m-0 p-0 bg-light\">\n" +
+       "                <div class=\"container mb-4 aboutus-title\">\n" +
+       "                    <h1>Community, with love</h1>\n" +
+       "                </div>\n" +
+       "                <div class=\"container\">\n" +
+       "                    <p class=\"text-justify\">There’s nothing more exciting than going out there and saying why what you\n" +
+       "                        do matters.\n" +
+       "                        That’s what motivates us when we organize, support and attend to local events in Wrocław.\n" +
+       "                        We love to listen to what others do; we love to share what we’ve done.\n" +
+       "                        So… when and where would you like to talk?</p>\n" +
+       "                </div>\n" +
+       "            </div>\n" +
+       "        </div>\n" +
+       "        <!-- about us description section end --------->\n" +
+       "    </div>\n" +
+       "</div>\n" +
+       "<!-- About Us Content End -->"
+}
+
+// .............AboutUs Section End
+
+// .............Site Service&Tech Section Loading Function
+
+function loadServiceAndTech () {
+    let serviceandtech = document.getElementById("serviceAndTech");
+    serviceandtech.innerHTML = "<!-- Services & Technologies Content Start -->\n" +
         "<div class=\"container-fluid\" id=\"contentService\">\n" +
         "    <!-- Page Heading Div Start -->\n" +
         "    <div class=\"row pt-4 pb-4\">\n" +
@@ -285,9 +317,16 @@ function loadSite () {
         "    </div>\n" +
         "    <!------------- Technology Icon Section End ---------->\n" +
         "</div>\n" +
-        "<!-- Services & Technologies Content End -->\n" +
-        "\n" +
-        "<!-- Contact Us Content Start -->\n" +
+        "<!-- Services & Technologies Content End -->"
+}
+
+// .............Service&Tech Section End
+
+// .............Site ContactUs Section Loading Function
+
+function loadContactUs () {
+    let contactus = document.getElementById("contactUs");
+    contactus.innerHTML = "<!-- Contact Us Content Start -->\n" +
         "<div class=\"container-fluid\" id=\"contentContactUs\">\n" +
         "    <div class=\"row  cover-image\">\n" +
         "        <!--    title and contact us form start-->\n" +
@@ -360,9 +399,16 @@ function loadSite () {
         "\n" +
         "    </div>\n" +
         "</div>\n" +
-        "<!-- Contact Us Content End -->\n" +
-        "\n" +
-        "<!-- Footer Area Start -->\n" +
+        "<!-- Contact Us Content End -->"
+}
+
+// .............ContactUs Section End
+
+// .............Site Footer Section Loading Function
+
+function loadFooter () {
+    let footer = document.getElementById("footer");
+    footer.innerHTML = "<!-- Footer Area Start -->\n" +
         "<div class=\"container-fluid p-0\">\n" +
         "    <!-- footer first row start -->\n" +
         "    <div class=\"row pt-4 pb-2 bg-gray vh-35 d-flex align-items-center m-0\">\n" +
@@ -529,3 +575,6 @@ function loadSite () {
         "</div>\n" +
         "<!-- Footer Area End -->"
 }
+
+// .............Footer Section End
+
