@@ -1,0 +1,159 @@
+:root {
+    --primaryColor: #931499;
+    --secondaryColor: #f1f1f1;
+}
+
+* {
+    border-radius: 0 !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+}
+
+
+/* Navbar Styles Start */
+.bg-light {
+    background-color: #fff !important;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.search-field:focus {
+    box-shadow: none;
+    border-color: var(--primaryColor);
+}
+
+.nav-link {
+    border-bottom-width: 0;
+    transition: border-bottom-width 0.1s;
+}
+
+.nav-link:hover {
+    color: var(--primaryColor) !important;
+    border-bottom: 2px solid var(--primaryColor);
+    border-bottom-width: medium;
+    display: inline;
+}
+
+@media only screen and (max-width: 576px) {
+    #btnNavSearch {
+        width: 100%;
+    }
+}
+
+.btn-purple {
+    color: #fff;
+    background-color: var(--primaryColor);
+    border: var(--primaryColor);
+}
+
+.btn-purple:hover {
+    background-color: #6a136e;
+}
+/* Navbar Styles End */
+
+
+/* Carousel Styles Start */
+.carousel {
+    margin-top: 5.2rem;
+}
+/* Carousel Styles End */
+
+
+/* Contents Style Start */
+.content-div {
+    height: 50vh;
+}
+/* Contents Style End */
+
+
+/* Footer Styles Start */
+
+/* Footer first row styles start */
+
+.vh-35{
+    height: 35vh;
+}
+
+.bg-gray {
+    background-image: linear-gradient(120deg, #49085a 0%, #b50af6 100%);
+    background-image: linear-gradient(330deg, #360543 0%, #a82ee7 100%);
+}
+
+/* Footer first row styles end */
+
+/* Footer second row styles start */
+
+.bg-lightgray {
+    background-color: lightgray;
+}
+ul li a {
+    color: #606060;
+}
+ul li a:hover {
+    color: #a84bc8;
+    text-decoration: none;
+}
+
+/* Footer second row styles end */
+
+/* Footer third row styles start */
+
+.vh-20{
+    height: 20vh;
+}
+.form-control {
+    border-radius: 0;
+}.form-control:focus{
+     border-color: transparent;
+     box-shadow: none;
+ }
+.social-icon {
+    width: 2rem;
+    height: auto;
+    margin: 0.5rem;
+}
+
+/* Footer third row styles end */
+
+/* Footer forth row styles start */
+
+.vh-8{
+    height: 8vh;
+}
+.bg-purple {
+    background-color: #6a136e;
+}
+
+@media only screen and (max-width: 576px) {
+    .vh-35{
+        height: 100%;
+    }
+
+    .vh-20{
+        height: 100%;
+    }
+
+    .vh-8{
+        height: 100%;
+    }
+
+    #social_icons {
+        justify-content: center !important;
+    }
+
+    .col-sm-0 {
+        display: none !important;
+    }
+}
+
+/* Footer forth row styles start */
+
+/* Footer Styles End */
